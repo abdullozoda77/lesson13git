@@ -18,6 +18,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
@@ -182,6 +184,12 @@
   }
 }
 @layer utilities {
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -194,8 +202,23 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
+  }
+  .mt-27 {
+    margin-top: calc(var(--spacing) * 27);
+  }
+  .mt-28 {
+    margin-top: calc(var(--spacing) * 28);
+  }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
   }
   .mr-50 {
     margin-right: calc(var(--spacing) * 50);
@@ -227,11 +250,26 @@
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
   }
+  .ml-45 {
+    margin-left: calc(var(--spacing) * 45);
+  }
+  .ml-48 {
+    margin-left: calc(var(--spacing) * 48);
+  }
   .ml-50 {
     margin-left: calc(var(--spacing) * 50);
   }
+  .ml-52 {
+    margin-left: calc(var(--spacing) * 52);
+  }
+  .ml-55 {
+    margin-left: calc(var(--spacing) * 55);
+  }
   .ml-70 {
     margin-left: calc(var(--spacing) * 70);
+  }
+  .ml-90 {
+    margin-left: calc(var(--spacing) * 90);
   }
   .ml-93 {
     margin-left: calc(var(--spacing) * 93);
@@ -278,14 +316,29 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
   .h-63 {
     height: calc(var(--spacing) * 63);
+  }
+  .h-\[50vh\] {
+    height: 50vh;
   }
   .h-\[55vh\] {
     height: 55vh;
   }
   .h-\[90vh\] {
     height: 90vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+  .h-\[120vh\] {
+    height: 120vh;
+  }
+  .h-\[150vh\] {
+    height: 150vh;
   }
   .h-\[190vh\] {
     height: 190vh;
@@ -305,6 +358,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .w-55 {
     width: calc(var(--spacing) * 55);
   }
@@ -314,8 +370,26 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[70\%\] {
+    width: 70%;
+  }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[85\%\] {
+    width: 85%;
+  }
+  .w-\[89\%\] {
+    width: 89%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-\[96\%\] {
     width: 96%;
@@ -361,12 +435,19 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .font-sans {
     font-family: var(--font-sans);
   }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
