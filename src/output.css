@@ -12,6 +12,8 @@
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --text-9xl: 8rem;
@@ -207,6 +209,9 @@
   .ml-0\.5 {
     margin-left: calc(var(--spacing) * 0.5);
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
   }
@@ -221,6 +226,9 @@
   }
   .ml-12\.5 {
     margin-left: calc(var(--spacing) * 12.5);
+  }
+  .ml-15 {
+    margin-left: calc(var(--spacing) * 15);
   }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
@@ -254,6 +262,18 @@
   }
   .h-25 {
     height: calc(var(--spacing) * 25);
+  }
+  .h-\[50\] {
+    height: 50;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-\[55vh\] {
+    height: 55vh;
+  }
+  .h-\[58vh\] {
+    height: 58vh;
   }
   .h-\[70\] {
     height: 70;
@@ -309,11 +329,17 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
   .justify-around {
     justify-content: space-around;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -339,6 +365,10 @@
   .font-sans {
     font-family: var(--font-sans);
   }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
@@ -350,6 +380,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
